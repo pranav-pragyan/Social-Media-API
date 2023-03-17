@@ -2,8 +2,6 @@ const req = require("express/lib/request");
 const mongoose = require("mongoose");
 const asyncError = require("../middleware/asyncError");
 const jwt = require("jsonwebtoken");
-// import { nanoid } from 'nanoid';
-// const uuidv4 = require("uuid")
 
 const postSchema = new mongoose.Schema({
   title: {
