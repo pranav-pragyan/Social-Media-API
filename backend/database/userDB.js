@@ -103,7 +103,7 @@ exports.authenticate = asyncError(async (req, res) => {
   //   return res.json({ success: false, message: "invalid email or password." });
 
   const token = user.getJWTtoken();
-  res.cookie('authcookie', token, { maxAge: 900000, httpOnly: true })
+  res.cookie('authcookie', token, { maxAge: 900000, httpOnly: false })
   res.status(200).json({ success: true, token });
 
 });
