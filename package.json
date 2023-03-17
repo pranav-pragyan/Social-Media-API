@@ -1,0 +1,26 @@
+{
+  "name": "socialmediaapi",
+  "version": "1.0.0",
+  "description": "An API for Social Media App for Reunion.",
+  "main": "backend/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "author": "\"Pranav Kumar\"",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.2",
+    "nanoid": "^4.0.1",
+    "nodemon": "^2.0.21",
+    "uuid": "^9.0.0",
+    "validator": "^13.9.0"
+  }
+}
