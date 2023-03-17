@@ -108,6 +108,12 @@ exports.authenticate = asyncError(async (req, res) => {
 
 });
 
+// user logout
+exports.userLogout = asyncError(async (req, res, next) => {
+  res.cookie("token", null, { expires: new Date(Date.now()) });
+  return res.status(200).json({ success: true, message: "You have logged out successfully." });
+});
+
 //follow a user
 exports.followUser = asyncError(async (req, res) => {
 
